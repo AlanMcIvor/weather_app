@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-height: 100vw;
+    background-color: #d3d3d3;
+}
+
+.container{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right top, #2082f4, #00b0f4, #00d0d2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 500px;
+    margin: 100px auto;
+    border-radius: 5px;
+    padding: 25px;
+    color: #fff;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 55px;
+}
+
+
+#input_form{
+    text-align: center;
+    position: relative;
+}
+
+#search_value{
+    padding: 0.7em;
+    width: 75%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+#submit_btn{
+    position: absolute;
+    right: 55px;
+    top: 0;
+    bottom: 0;
+    background-color: #053885;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.temp_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#city_name{
+    font-size: 50px;
+}
+
+#temp_display{
+    font-size: 35px;
+}
+
+.output_container{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.weather_container{
+    display: none;
+}
+
+.error{
+    color: red;
+    text-align: left;
+    margin-left: 57px;
+    margin-top: 5px;
+    display: none;
+}
+
+

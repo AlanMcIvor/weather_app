@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaCast</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+
+
+            <h1>ClimaCast</h1>
+            <form id="input_form">
+                <input type="text" id="search_value" name="search_value" placeholder="Enter Location:">
+                <button id="submit_btn"><box-icon name='search-alt-2' color="white"></box-icon></button>
+            </form>
+
+            <div class="error">
+                <p>Invalid name, please try again!</p>
+            </div>
+
+            <div class="weather_container">
+
+                <div class="temp_container">
+                    <img class="icon" src="assets/clouds.png" alt="An image relating to weather">
+                    <p id="city_name">Glasgow</p>
+                    <p id="temp_display">8 <span id="degrees">&#8451</span></p>
+                </div>
+
+                <div class="output_container">
+                    <div class="humidity_container">
+                        <img src="assets/humidity 1.png" alt="">
+                        <p id="humidity_display">25%</p>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="wind_container">
+                        <img src="assets/wind 1.png" alt="">
+                        <p id="wind_display">15km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
