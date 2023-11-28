@@ -6,13 +6,11 @@ const searchBtn = document.querySelector(".submit_btn");
 const mainIcon = document.querySelector(".main_icon");
 
 
-
-
 // asynchronous function to access openweather api
 async function checkWeather(city){
     const response = await fetch(apiURL + city + `&appid=${apiKey}`);
 
-    if(response.status == 404){
+    if(response.status == 404 || searchValue.value == ""){
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather_container").style.display = "none";
     }else{
