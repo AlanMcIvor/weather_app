@@ -13,7 +13,7 @@
 .container{
     max-width: 500px;
     margin: 55px auto;
-    padding: 15px;
+    padding: 25px;
     border-radius: 25px;
     background-image: url(assets/night_bg.webp), linear-gradient(90deg, #0e134b, #0e134b);
     background-blend-mode:overlay;
@@ -41,9 +41,19 @@ input[type="submit"]{
 }
 
 
+.form{
+    text-align: center;
+}
 
-.date{
+.error{
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+
+.city_name{
     font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .form_group{
@@ -54,6 +64,8 @@ input[type="submit"]{
 
 
 .todays_info_container{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 15px;
 }
@@ -61,6 +73,11 @@ input[type="submit"]{
 .todays_temp{
     font-size: 52px;
     font-weight: 300;
+}
+
+.main_icon{
+    width: 250px;
+    margin: 0 auto;
 }
 
 .conditions{

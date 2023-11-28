@@ -12,23 +12,27 @@
  <div class="container">
 
 
-    <form>
+    <form class="form">
         <div class="form_group">
             <input type="text" name="location" placeholder="Enter a location:" class="location_input">
             <input type="submit" class="submit_btn">
         </div>
+        <span class="error">Please enter a valid location</span>
     </form>
 
+<div class="weather_container">
+
     <div class="todays_info_container">
-        <span class="date">Friday, 14th Nov</span>
-        <h2 class="todays_temp">10o</h2>
-        <p class="conditions"><span class="main_icon"><img src="assets/rain.png" alt=""></span>Rainy</p>
+        <span class="city_name"></span>
+        <span class="date"></span>
+        <h2 class="todays_temp"></h2>
+        <img src="" alt="" class="main_icon">
+        <p class="conditon"></p>
     </div>
 
     <div class="chance_container">
-      <p class="rain"><span><box-icon type='solid' name='cloud-rain' size="md" color="white"></box-icon></span>10%</p>
-      <p class="wind"><span><box-icon name='wind' size="md" color="white"></box-icon></span>13%</p>
-      <p class="humidity"><span><box-icon name='water' size="md" color="white"></box-icon></span>24kmh</p>
+      <p class="wind"></p>
+      <p class="humidity"></p>
     </div>
 
     <div class="hourly_weekly_container">
@@ -106,6 +110,7 @@
     </div>
 
     </div>
+</div>
 
 </div>
     
