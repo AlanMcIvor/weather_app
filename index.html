@@ -9,43 +9,108 @@
 </head>
 <body>
 
-    <div class="container">
+ <div class="container">
 
 
+    <form>
+        <div class="form_group">
+            <input type="text" name="location" placeholder="Enter a location:" class="location_input">
+            <input type="submit" class="submit_btn">
+        </div>
+    </form>
 
-            <h1>ClimaCast</h1>
-            <form id="input_form">
-                <input type="text" id="search_value" name="search_value" placeholder="Enter Location:">
-                <button id="submit_btn"><box-icon name='search-alt-2' color="white"></box-icon></button>
-            </form>
+    <div class="todays_info_container">
+        <span class="date">Friday, 14th Nov</span>
+        <h2 class="todays_temp">10o</h2>
+        <p class="conditions"><span class="main_icon"><img src="assets/rain.png" alt=""></span>Rainy</p>
+    </div>
 
-            <div class="error">
-                <p>Invalid name, please try again!</p>
-            </div>
+    <div class="chance_container">
+      <p class="rain"><span><box-icon type='solid' name='cloud-rain' size="md" color="white"></box-icon></span>10%</p>
+      <p class="wind"><span><box-icon name='wind' size="md" color="white"></box-icon></span>13%</p>
+      <p class="humidity"><span><box-icon name='water' size="md" color="white"></box-icon></span>24kmh</p>
+    </div>
 
-            <div class="weather_container">
+    <div class="hourly_weekly_container">
 
-                <div class="temp_container">
-                    <img class="icon" src="assets/clouds.png" alt="An image relating to weather">
-                    <p id="city_name">Glasgow</p>
-                    <p id="temp_display">8 <span id="degrees">&#8451</span></p>
+    <div class="btn_container">
+        <button class="hourly_btn btn">Hourly</button>
+        <button class="weekly_btn btn">Weekly</button>
+    </div>
+
+    <div class="hourly">
+            <div class="card_container">
+                <div class="card">
+                    <img src="assets/clouds.png" alt="" class="card_icon">
+                    <p class="card_time">12pm</p>
+                    <p class="card_temp">24o</p>
                 </div>
 
-                <div class="output_container">
-                    <div class="humidity_container">
-                        <img src="assets/humidity 1.png" alt="">
-                        <p id="humidity_display">25%</p>
-                        <p>Humidity</p>
-                    </div>
-                    <div class="wind_container">
-                        <img src="assets/wind 1.png" alt="">
-                        <p id="wind_display">15km/h</p>
-                        <p>Wind Speed</p>
-                    </div>
+                <div class="card">
+                    <img src="assets/clouds.png" alt="" class="card_icon">
+                    <p class="card_time">12pm</p>
+                    <p class="card_temp">24o</p>
                 </div>
-            </div>
+
+                <div class="card">
+                    <img src="assets/clouds.png" alt="" class="card_icon">
+                    <p class="card_time">12pm</p>
+                    <p class="card_temp">24o</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/clouds.png" alt="" class="card_icon">
+                    <p class="card_time">12pm</p>
+                    <p class="card_temp">24o</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/clouds.png" alt="" class="card_icon">
+                    <p class="card_time">12pm</p>
+                    <p class="card_temp">24o</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/clouds.png" alt="" class="card_icon">
+                    <p class="card_time">12pm</p>
+                    <p class="card_temp">24o</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/clouds.png" alt="" class="card_icon">
+                    <p class="card_time">12pm</p>
+                    <p class="card_temp">24o</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/clouds.png" alt="" class="card_icon">
+                    <p class="card_time">12pm</p>
+                    <p class="card_temp">24o</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/clouds.png" alt="" class="card_icon">
+                    <p class="card_time">12pm</p>
+                    <p class="card_temp">24o</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/clouds.png" alt="" class="card_icon">
+                    <p class="card_time">12pm</p>
+                    <p class="card_temp">24o</p>
+                </div>
+        </div>
+    </div>
+    <div class="weekly">
+        <div class="weeakly_card"></div>
+    </div>
 
     </div>
+
+</div>
+    
+
+ 
     <script src="script.js"></script>
 </body>
 </html>

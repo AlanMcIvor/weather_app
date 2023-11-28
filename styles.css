@@ -1,101 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    min-height: 100vh;
-    min-height: 100vw;
-    background-color: #d3d3d3;
-    overflow: hidden;
+ body{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(243, 243, 243);
 }
 
 .container{
-    font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to right top, #2082f4, #00b0f4, #00d0d2);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     max-width: 500px;
-    margin: 100px auto;
+    margin: 55px auto;
+    padding: 15px;
+    border-radius: 25px;
+    background-image: url(assets/night_bg.webp), linear-gradient(90deg, #0e134b, #0e134b);
+    background-blend-mode:overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+input[type="text"]{
+    height: 25px;
+    padding: 2px;
+}
+
+input[type="submit"]{
+    height: 25px;
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: white;
     border-radius: 5px;
-    padding: 25px;
-    color: #fff;
-}
-
-h1{
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 55px;
+    border: white;
+    margin-left: 5px;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
 
 
-#input_form{
-    text-align: center;
-    position: relative;
+
+.date{
+    font-size: 24px;
 }
 
-#search_value{
-    padding: 0.7em;
-    width: 75%;
-    border: 1px solid black;
-    outline: none;
-    border-radius: 5px 0px 0px 5px;
-}
-
-
-#submit_btn{
-    position: absolute;
-    right: 55px;
-    top: 0;
-    bottom: 0;
-    background-color: #053885;
-    outline: none;
-    border: 1px solid black;
-    border-radius: 0 5px 5px 0;
-    width: 40px;
+.form_group{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
-.temp_container{
+
+.todays_info_container{
+    text-align: center;
+    padding: 15px;
+}
+
+.todays_temp{
+    font-size: 52px;
+    font-weight: 300;
+}
+
+.conditions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conditions img{
+    max-width: 50px;
+}
+
+.chance_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 70%;
+    margin: auto;
+}
+
+.chance_container > p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 0 5px;
 }
 
-#city_name{
-    font-size: 50px;
-}
-
-#temp_display{
-    font-size: 35px;
-}
-
-.output_container{
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 0;
+.btn_container{
+    width: 70%;
     text-align: center;
-    font-size: 25px;
+    margin: 25px auto;
+    padding: 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(89, 97, 112, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-.weather_container{
-    display: none;
+.btn{
+    padding: 5px 25px;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.error{
-    color: red;
-    text-align: left;
-    margin-left: 57px;
-    margin-top: 5px;
-    display: none;
+.hourly_weekly_container{
+    margin-top: 15px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(89, 97, 112, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+.hourly_btn{
+    background-color: #0e134b;
+    color: white;
+    
+}
+
+.hourly{
+    width: 400px;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+
+.card_container{
+    display: flex;
+}
+
+.card{
+    width: 150px;
+    margin-left: 25px;
+    text-align: center;
+    background-color: #0e134b;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.card img{
+    width: 100%;
+}
 
