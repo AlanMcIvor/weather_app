@@ -70,6 +70,10 @@ input[type="submit"]{
     padding: 15px;
 }
 
+.todays_info_container p{
+    font-size: 25px;
+}
+
 .todays_temp{
     font-size: 52px;
     font-weight: 300;
@@ -80,15 +84,6 @@ input[type="submit"]{
     margin: 0 auto;
 }
 
-.conditions{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.conditions img{
-    max-width: 50px;
-}
 
 .chance_container{
     display: flex;
@@ -103,68 +98,5 @@ input[type="submit"]{
     flex-direction: column;
     align-items: center;
     padding: 0 5px;
-}
-
-.btn_container{
-    width: 70%;
-    text-align: center;
-    margin: 25px auto;
-    padding: 10px;
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(89, 97, 112, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-}
-
-.btn{
-    padding: 5px 25px;
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.hourly_weekly_container{
-    margin-top: 15px;
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(89, 97, 112, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-}
-
-.hourly_btn{
-    background-color: #0e134b;
-    color: white;
-    
-}
-
-.hourly{
-    width: 400px;
-    margin: auto;
-    overflow-x: scroll;
-    overflow-y: hidden;
-
-}
-
-.card_container{
-    display: flex;
-}
-
-.card{
-    width: 150px;
-    margin-left: 25px;
-    text-align: center;
-    background-color: #0e134b;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.card img{
-    width: 100%;
 }
 
